@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+    real conta, valor, consumo
+    caracter tipo
+
+    escreva("Digite o número da conta: ")
+    leia(conta)
+    escreva("Digite a quatidade de metros cúbicos consumidos: ")
+    leia(consumo)
+    escreva("Digite o tipo de consumidor (R, C, I): ")
+    leia(tipo)
+
+    se (tipo == "R") {valor = consumo * 0.05 + 5
+    escreva("Valor a ser pago: ")
+    escreva(valor)
+    } senao {
+    se (tipo == "C") {}
+
+    }
+     
+    
+
+    
+  }
+}
