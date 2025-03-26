@@ -7,7 +7,7 @@ programa {
     escreva("Digite o gasto de energia: ")
     leia(kw)
 
-  custo_kw = sal * 0.7
+  custo_kw = sal * 0.7 / 100
   custo_consumo = custo_kw * kw
   desconto = custo_consumo * 0.9
 
