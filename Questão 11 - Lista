@@ -1,0 +1,12 @@
+programa {
+  inteiro n1
+  funcao inicio() {
+    escreva("Digite o número: ")
+    leia(n1)
+
+    se (n1%5 ou n1%3 == 0)
+    escreva("O NÚMERO É DIVISÍVEL")
+    senao
+    escreva("O NÚMERO NÃO É DIVISÍVEL")
+  }
+}
