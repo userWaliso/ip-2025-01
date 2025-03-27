@@ -5,8 +5,8 @@ programa {
     leia(n1)
 
     se (n1%5 == 0 ou n1%3 == 0)
-    escreva("O NÚMERO É DIVISÍVEL")
+    escreva("O NÚMERO É DIVISÍVEL\n")
     senao
-    escreva("O NÚMERO NÃO É DIVISÍVEL")
+    escreva("O NÚMERO NÃO É DIVISÍVEL\n")
   }
 }
