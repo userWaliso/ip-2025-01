@@ -11,7 +11,7 @@ programa {
     leia(Temp)
     vetor[c] = (5 / 9) * (Temp - 32)}
     para (c = 0; c < A; c = c + 1) {
-      escreva("TEMPERATURA EQUIVALE A: ", mat.arredondar(vetor[c],2), " ", "CELSIUS", "\n")
+      escreva(mat.arredondar(vetor[c],2)*9/5+32," ", "TEMPERATURA EQUIVALE A: ", mat.arredondar(vetor[c],2), " ", "CELSIUS\n")
     }
     } 
   }
