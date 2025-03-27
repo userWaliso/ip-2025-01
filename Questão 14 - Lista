@@ -1,0 +1,15 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  real h, a, Ab, v
+  funcao inicio() {
+    escreva("Dẽ a altura: ")
+    leia(h)
+    escreva("Dê a aresta: ")
+    leia(a)
+
+    Ab = 3 * mat.potencia(a,2)*mat.raiz(3,2) / 2
+    v = Ab * h / 3
+
+    escreva("O VOLUME DA PIRAMIDE É = ", mat.arredondar(v,2), " METROS CÚBICOS\n")
+  }
+}
