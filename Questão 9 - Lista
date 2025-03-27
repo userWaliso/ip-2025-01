@@ -1,0 +1,17 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  real a, b, c, delta
+  funcao inicio() {
+    escreva("Valor do A: ")
+    leia(a)
+    escreva("Valor da B: ")
+    leia(b)
+    escreva("Valor da C: ")
+    leia(c)
+
+    delta = mat.potencia(b, 2) - 4*a*c
+  
+    escreva("O VALOR DE DELTA É: ", mat.arredondar(delta,2),"\n")
+    
+  }
+}
