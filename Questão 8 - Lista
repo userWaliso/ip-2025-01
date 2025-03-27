@@ -1,0 +1,17 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  real r, h, base, lateral, area, valor
+  const real pi = 3.14159
+  funcao inicio() {
+    escreva("Valor do raio: ")
+    leia(r)
+    escreva("Valor da altura: ")
+    leia(h)
+  base = pi*mat.potencia(r,2)*2
+  lateral = 2*pi*r*h
+  area = base + lateral
+  valor = area*100
+    escreva("O VALOR DO CUSTO É: ", mat.arredondar(valor,2),"\n")
+    
+  }
+}
