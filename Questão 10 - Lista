@@ -1,0 +1,16 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  real a, b, c, d, valor
+  funcao inicio() {
+    escreva("Defina A: ")
+    leia(a)
+    escreva("Defina B: ")
+    leia(b)
+    escreva("Defina C: ")
+    leia(c)
+    escreva("Defina D: ")
+    leia(d)
+    valor = (a * d) - (b * c)
+    escreva("O VALOR DO DETERMINANTE É: ", mat.arredondar(valor,2), "\n")
+  }
+}
