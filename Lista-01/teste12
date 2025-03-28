@@ -1,0 +1,16 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  real h, int, rest, valor, x
+  funcao inicio() {
+    escreva("Horas utilizadas: ")
+    leia(h)
+
+    x = h/3
+    int = 10
+    rest = 5*(h%3)
+    valor = mat.arredondar(int,0) + mat.arredondar(rest,0)
+
+    escreva("O VALOR A PAGAR E = ", mat.arredondar(valor,2),"\n")
+    
+  }
+}
