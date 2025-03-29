@@ -1,0 +1,12 @@
+programa {
+  real n1, n2, n3, hr
+  funcao inicio() {
+    leia(n1)
+    leia(n2)
+    leia(n3)
+
+    hr = n1 * 60 * 60 + n2 * 60 + n3
+    escreva("O TEMPO EM SEGUNDOS É = ",hr)
+    
+  }
+}
