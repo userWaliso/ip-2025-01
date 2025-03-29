@@ -1,0 +1,20 @@
+package main
+
+import fmt
+
+func main() {
+	var n int
+
+	fmt.Println("Digite o número")
+	scan(int)
+	
+	if n > 0 {
+	fmt.Println("POSITIVO")
+	}
+	else if n = 0 {
+	fmt.Println("NULO")
+	}
+	else if n < 0 {
+	fmt.Println("NEGATIVO")
+	}
+}
