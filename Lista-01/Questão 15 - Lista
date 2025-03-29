@@ -1,0 +1,13 @@
+programa {
+  real n, c, n1
+  funcao inicio() {
+    escreva("número: ")
+    leia(n)
+    c = 2
+    se(5 < n < 2000)
+    faca {n1 = c * c
+      escreva(c, "^2 = ", n1, "\n")
+      c = c + 2}
+      enquanto(c <= n)
+  }
+}
