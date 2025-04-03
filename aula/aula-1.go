@@ -8,10 +8,10 @@ func main() {
 	fmt.Scan(&aluno)
 
 	for i = 0; i < aluno; i++ {
-		fmt.Printf("Digite a nota do aluno %.1f°: ", i+1)
+		fmt.Printf("Digite a nota do aluno %.0f°: ", i+1)
 		fmt.Scan(&media)
-		soma +=  media
+		soma += media
 	}
-	mediaglobal := media/aluno
-	fmt.Println("A média global é: \n",mediaglobal)
+	mediaglobal := soma/aluno
+	fmt.Printf("A média global é %.1f\n: ",mediaglobal)
 }
