@@ -21,10 +21,13 @@ func main() {
 			max = v
 		}
 	}
-	iguais := make([]float64, x)
+	
 	for _,v := range vetor {
-		iguais = append(iguais, v)
-		norm = (v - min) / (max - min)
+		if max - min == 0 {
+			norm = 0
+		} else {
+			norm = (v - min) / (max - min)
+		}
 		f.Printf("%.2f ", norm)
 	}
 }

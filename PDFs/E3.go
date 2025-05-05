@@ -8,17 +8,28 @@ func main() {
 	for i:=0;i<x;i++ {
 		f.Scan(&vetor[i])
 	}
+	if x == 1 {
+		println("0")
+		return
+	}
+
+
 	var ivete[] int
+
+
 	min:= vetor[1]
 	max := vetor[len(vetor) - 2]
+
+	ivete = append(ivete, min)
 	for i:=0;i<len(vetor);i++ {
-		if i != 0 {
+
+		if i > 0 && i < len(vetor)-1 {
+
 			v = vetor[i-1] + vetor[i+1]
-		} else if i == len(vetor) - 1 {
-			
+			ivete = append(ivete, v)
 		}
-		ivete = append(ivete, v)
 	}
-	println(min, max, ivete)
+	ivete = append(ivete, max)
+	f.Println(ivete)
 	
 }

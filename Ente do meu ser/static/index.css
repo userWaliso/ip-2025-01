@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  header {
+    background-color: rgb(25, 25, 138);
+    padding: 1rem;
+  }
+  
+  #cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #cabecalho h1 {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  #cabecalho img {
+    width: 60px;
+    height: auto;
+  }
+  
+  ul {
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: rgb(25, 25, 138);
+  }
+  
+  #centralizada {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  #centralizada img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  #Sobre {
+    background-color: beige;
+    padding: 1rem;
+  }
+  
+  form {
+    padding: 1rem;
+  }
+  
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  p {
+    padding: 0 1rem 1rem 1rem;
+  }
+  
+  footer {
+    background-color: rgb(25, 25, 138);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 600px) {
+    #cabecalho {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #centralizada {
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+    }
+  }
+  
