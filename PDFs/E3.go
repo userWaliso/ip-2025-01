@@ -1,27 +1,27 @@
-package main 
-import f"fmt"
+package main
+
+import f "fmt"
+
 func main() {
 	var x, v int
 	f.Scan(&x)
 	vetor := make([]int, x)
 
-	for i:=0;i<x;i++ {
+	for i := 0; i < x; i++ {
 		f.Scan(&vetor[i])
 	}
 	if x == 1 {
-		println("0")
+		f.Println("0")
 		return
 	}
 
+	var ivete []int
 
-	var ivete[] int
-
-
-	min:= vetor[1]
-	max := vetor[len(vetor) - 2]
+	min := vetor[1]
+	max := vetor[len(vetor)-2]
 
 	ivete = append(ivete, min)
-	for i:=0;i<len(vetor);i++ {
+	for i := 0; i < len(vetor); i++ {
 
 		if i > 0 && i < len(vetor)-1 {
 
@@ -30,6 +30,8 @@ func main() {
 		}
 	}
 	ivete = append(ivete, max)
-	f.Println(ivete)
-	
+	for _, n := range ivete {
+		f.Printf("%d ", n)
+	}
+	f.Println()
 }
